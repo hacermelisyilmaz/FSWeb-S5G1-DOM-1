@@ -124,3 +124,7 @@ const contactP = contact.querySelectorAll("p");
 contactP[0].textContent = siteContent["iletisim"]["adres"];
 contactP[1].textContent = siteContent["iletisim"]["telefon"];
 contactP[2].textContent = siteContent["iletisim"]["email"];
+
+const footer = container.querySelector("footer > a");
+footer.textContent = siteContent["footer"]["copyright"];
+footer.className = "bold";
