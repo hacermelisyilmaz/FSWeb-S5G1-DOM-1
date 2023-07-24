@@ -92,3 +92,25 @@ topP2.textContent = siteContent["ana-içerik"]["hakkımızda-içerik"];
 
 const mainContentImg = mainContent.querySelector("img#middle-img");
 mainContentImg.setAttribute("src", siteContent.images["accent-img"]);
+
+const bottomTextContent = mainContent.querySelectorAll(
+  "div.bottom-content > div.text-content"
+);
+
+const bottomH41 = bottomTextContent[0].querySelector("h4");
+bottomH41.textContent = siteContent["ana-içerik"]["servisler-h4"];
+
+const bottomP1 = bottomTextContent[0].querySelector("p");
+bottomP1.textContent = siteContent["ana-içerik"]["servisler-içeriği"];
+
+const bottomH42 = bottomTextContent[1].querySelector("h4");
+bottomH42.textContent = siteContent["ana-içerik"]["ürünler-h4"];
+
+const bottomP2 = bottomTextContent[1].querySelector("p");
+bottomP2.textContent = siteContent["ana-içerik"]["ürünler-içeriği"];
+
+const bottomH43 = bottomTextContent[2].querySelector("h4");
+bottomH43.textContent = siteContent["ana-içerik"]["vizyon-h4"];
+
+const bottomP3 = bottomTextContent[2].querySelector("p");
+bottomP3.textContent = siteContent["ana-içerik"]["vizyon-içeriği"];
