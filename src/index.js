@@ -57,3 +57,6 @@ for (let i = 0; i < 6; i++) {
   headerNav[i].textContent = siteContent.nav[`nav-item-${i + 1}`];
   headerNav[i].className = "italic";
 }
+
+const headerLogo = container.querySelector("header > img");
+headerLogo.setAttribute("src", siteContent.images["logo-img"]);
