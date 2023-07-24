@@ -71,3 +71,24 @@ ctaButton.textContent = siteContent.cta.button;
 
 const ctaImg = cta.querySelector("img#cta-img");
 ctaImg.setAttribute("src", siteContent.images["cta-img"]);
+
+const mainContent = container.querySelector("section.main-content");
+
+const topTextContent = mainContent.querySelectorAll(
+  "div.top-content > div.text-content"
+);
+
+const topH41 = topTextContent[0].querySelector("h4");
+topH41.textContent = siteContent["ana-içerik"]["özellikler-h4"];
+
+const topP1 = topTextContent[0].querySelector("p");
+topP1.textContent = siteContent["ana-içerik"]["özellikler-içerik"];
+
+const topH42 = topTextContent[1].querySelector("h4");
+topH42.textContent = siteContent["ana-içerik"]["hakkımızda-h4"];
+
+const topP2 = topTextContent[1].querySelector("p");
+topP2.textContent = siteContent["ana-içerik"]["hakkımızda-içerik"];
+
+const mainContentImg = mainContent.querySelector("img#middle-img");
+mainContentImg.setAttribute("src", siteContent.images["accent-img"]);
