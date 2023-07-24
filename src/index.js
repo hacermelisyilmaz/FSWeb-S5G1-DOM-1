@@ -114,3 +114,13 @@ bottomH43.textContent = siteContent["ana-içerik"]["vizyon-h4"];
 
 const bottomP3 = bottomTextContent[2].querySelector("p");
 bottomP3.textContent = siteContent["ana-içerik"]["vizyon-içeriği"];
+
+const contact = container.querySelector("section.contact");
+
+const contactH4 = contact.querySelector("h4");
+contactH4.textContent = siteContent["iletisim"]["iletişim-h4"];
+
+const contactP = contact.querySelectorAll("p");
+contactP[0].textContent = siteContent["iletisim"]["adres"];
+contactP[1].textContent = siteContent["iletisim"]["telefon"];
+contactP[2].textContent = siteContent["iletisim"]["email"];
