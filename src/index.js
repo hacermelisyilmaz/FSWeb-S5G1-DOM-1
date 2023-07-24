@@ -60,3 +60,11 @@ for (let i = 0; i < 6; i++) {
 
 const headerLogo = container.querySelector("header > img");
 headerLogo.setAttribute("src", siteContent.images["logo-img"]);
+
+const cta = container.querySelector("section.cta");
+
+const ctaH1 = cta.querySelector("div.cta-text > h1");
+ctaH1.textContent = siteContent.cta.h1;
+
+const ctaButton = cta.querySelector("div.cta-text > button");
+ctaButton.textContent = siteContent.cta.button;
